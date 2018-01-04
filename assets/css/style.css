@@ -1,9 +1,39 @@
+body {
+    background-color: grey;
+}
+
+.top_left {
+    float: left;
+    width: 500px;
+    background-color: grey;
+}
+
+button {
+    color: red;
+    background-color: grey;
+    font-size: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 2px;
+}
+
+form {
+    padding-top: 50px;
+    margin-left: 20px;
+    background-color: grey;
+}
+
 .head {
     font-size: 30px;
 }
 
 #head2 {
     margin-left: 100px;
+}
+
+.gifs {
+    clear: both;
 }
 
 .gif_div {
