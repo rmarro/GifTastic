@@ -1,0 +1,14 @@
+.head {
+    font-size: 30px;
+}
+
+#head2 {
+    margin-left: 100px;
+}
+
+.gif_div {
+    float: left;
+    border: solid 2px black;
+    margin: 10px;
+    padding: 5px;
+}
