@@ -1,13 +1,16 @@
+//=========================================================================================
 // array of words
-// loop through and make buttons of each, with word as a data-something
+// loop through and make buttons of each, with word as a data-
 // add event listener to all buttons on click
     // make the data- the search of the api request
         // (insert it into the queryURL)
-    // make all a bunch of images with the json returned
+    // make a bunch of images with the json returned
         // for each image it should have a data-animated and a data-still verison
             // and a data-status 
-        // on click of image change the status to animated or still
+        // on click of image change the src and status to animated or still
 // for form, push or prepend new word to array of words and call button maker function again
+//===========================================================================================
+
 
 var topics = ["Harry Potter", "Albus Dumbledore", "Hermione Granger", "Ron Weasley", "Quidditch"];
 
@@ -25,7 +28,7 @@ function makeButtons() {
 makeButtons();
 
 // When button is clicked
-$("button").on("click", function() {
+$(document).on("click", "button", function() {
     $(".gifs").empty();
     // Make queryURL with data-word attribute as search term
     var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=Vo3yan4o4RtxSVlfIia2Zlsk8C7I5FP3&limit=10&q="
@@ -67,16 +70,22 @@ $(document).on("click", "img", function() {
     if (state === "still") {
         $(this).attr("src", $(this).attr("data-animate"));
         $(this).attr("data-state", "animate")
-    } else {
+    } 
+    // If data-state is animate, change img src to still
+    else {
         $(this).attr("src", $(this).attr("data-still"));
         $(this).attr("data-state", "still")
     }
+});
 
-    // If data-state is animate, change img src to still
 
+// When submit button of form is clicked
+$("#add-button").on("click", function(event) {
+    // prevent form from trying to submit/refresh the page
+    event.preventDefault();
+    // add textbox input to the array of topics
+    topics.push($("#new-button").val().trim());
+    // remake new buttons
+    $(".buttons").empty();
+    makeButtons();
 })
-
-
-// TO DO
-// add onclick image to change src based on state
-// add form (make sure button click push only applies to form button)
