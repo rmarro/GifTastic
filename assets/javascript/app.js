@@ -5,14 +5,13 @@
     // make the data- the search of the api request
         // (insert it into the queryURL)
     // make a bunch of images with the json returned
-        // for each image it should have a data-animated and a data-still verison
-            // and a data-status 
+        // for each image it should have a data-animated link, data-still link, and data-status
         // on click of image change the src and status to animated or still
-// for form, push or prepend new word to array of words and call button maker function again
-//===========================================================================================
+// for form, push new word to array of words and call button maker function again
+//==========================================================================================
 
 
-var topics = ["Harry Potter", "Albus Dumbledore", "Hermione Granger", "Ron Weasley", "Quidditch"];
+var topics = ["Leslie Knope", "Ann Perkins", "Ron Swanson", "Andy Dwyer", "April Ludgate", "Tom Haverford", "Chris Traeger", "Donna Meagle"];
 
 // Make a button for each item in topics array
 function makeButtons() {

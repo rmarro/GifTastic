@@ -1,35 +1,43 @@
 body {
-    background-color: grey;
+    background-color: rgb(45, 94, 26);
+    font-family: "Times New Roman", Times, serif;
+    color: white;
+}
+
+marquee {
+    font-size: 25px;
 }
 
 .top_left {
     float: left;
-    width: 500px;
-    background-color: grey;
+    width: 550px;
+    background-color: rgb(45, 94, 26);;
+}
+
+.head {
+    font-size: 40px;
 }
 
 button {
-    color: red;
-    background-color: grey;
-    font-size: 15px;
+    background-color:  rgb(45, 94, 26);
+    font-size: 25px;
+    padding: 10px;
+    margin: 5px;
     border-style: solid;
     border-width: 1px;
-    border-color: black;
+    border-color: grey;
     border-radius: 2px;
 }
 
 form {
     padding-top: 50px;
     margin-left: 20px;
-    background-color: grey;
+    font-size: 18px;
+    background-color:  rgb(45, 94, 26);
 }
 
-.head {
-    font-size: 30px;
-}
-
-#head2 {
-    margin-left: 100px;
+#add-button, #new-button {
+    color: black;
 }
 
 .gifs {
@@ -38,7 +46,7 @@ form {
 
 .gif_div {
     float: left;
-    border: solid 2px black;
+    border: solid 2px grey;
     margin: 10px;
     padding: 5px;
 }
